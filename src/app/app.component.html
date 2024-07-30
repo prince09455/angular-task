@@ -1,0 +1,17 @@
+<app-nav></app-nav>
+<div class="main-container">
+  <button (click)="startProgress()">Start</button>
+</div>
+<div class="progress-container" *ngIf="progressVisible">
+  <button (click)="toggleProgressBar()" class="toggge_progress">
+    <i class="fa-regular fa-square-caret-down"></i>
+  </button>
+  <div
+    class="progress-bar"
+    *ngIf="progressBarVisible"
+    [style.width.%]="progress"
+  >
+    <span class="progressPer">{{ progress }}%</span>
+  </div>
+</div>
+<app-success-popup></app-success-popup>

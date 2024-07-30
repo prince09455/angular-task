@@ -1,0 +1,39 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.progress-container .toggge_progress {
+  max-width: 20px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.progress-bar {
+  width: 0;
+  height: 20px;
+  background-color: #4caf50;
+  transition: width 0.1s linear;
+  box-sizing: border-box;
+  position: relative;
+}
+.progressPer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: red;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+}
